@@ -4,6 +4,7 @@ from flask_mail import Mail, Message
 import secrets
 import json
 import pdfkit
+from flask_cors import CORS
 
 import smtplib
 from email.mime.multipart import MIMEMultipart
@@ -11,6 +12,7 @@ from email.mime.base import MIMEBase
 from email import encoders
 
 app = Flask(__name__)
+CORS(app)
 app.config['MAIL_SERVER']='smtp.gmail.com'
 app.config['MAIL_PORT'] = 465
 app.config['MAIL_USERNAME'] = 'hackthonedfgroupe15@gmail.com'
