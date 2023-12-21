@@ -1,0 +1,42 @@
+[
+    {
+      "id": "1",
+      "type": "unique",
+      "question": "En arrivant au bureau, souhaitez-vous maintenir la température à 30 degrés ou la baisser à 23 degrés pour économiser de l'énergie ?",
+      "reponses_proposées": ["30 degrés", "23 degrés"],
+      "categories": [],
+      "score": "0",
+      "explication": "",
+      "reponse": ""
+    },
+    {
+      "id": "2",
+      "type": "unique",
+      "question": "Lorsque vous quittez votre bureau, mettez-vous l'ordinateur en veille et éteindre les lumières pour économiser de l'énergie ?",
+      "reponses_proposées": ["Mettre en veille l’ordinateur", "Eteindre les lumières"],
+      "categories": [],
+      "score": "0",
+      "explication": "",
+      "reponse": ""
+    },
+    {
+      "id": "3",
+      "type": "unique",
+      "question": "Utilisez-vous des prises programmables pour éteindre automatiquement les appareils électroniques non essentiels en dehors des heures de travail ?",
+      "reponses_proposées": ["Oui", "Non"],
+      "categories": [],
+      "score": "0",
+      "explication": "",
+      "reponse": ""
+    },
+    {
+      "id": "4",
+      "type": "unique",
+      "question": "Pour réduire la consommation d'énergie, proposez-vous des idées éco-responsables à vos collègues au travail ?",
+      "reponses_proposées": ["Oui", "Non"],
+      "categories": [],
+      "score": "0",
+      "explication": "",
+      "reponse": ""
+    }
+  ]

@@ -1,0 +1,8 @@
+{
+    "id": "0",
+    "pseudo": "john_doe",
+    "mot_de_passe": "P@ssw0rd",
+    "email": "john@email.fr",
+    "score": 100,
+    "certificat": "true"
+}

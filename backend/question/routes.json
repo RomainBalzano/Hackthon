@@ -1,0 +1,9 @@
+{
+    "id": "unique_id_here",
+    "question": "Votre question ici",
+    "reponses_proposées": ["Réponse 1", "Réponse 2", "Réponse 3", "Réponse 4"],
+    "categories": ["Catégorie 1", "Catégorie 2", "Catégorie 3"],
+    "score": "0",
+    "Explications": "Explications ici",
+    "reponse": "La réponse ici"
+}
