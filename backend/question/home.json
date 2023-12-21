@@ -167,6 +167,21 @@
         "time":"light",
         "reponse": [0, 1, 2,3]
       }
+      ,
+      {
+        "id": "14",
+        "type": "multiple",
+        "question": "Avant de quitter la maison, quelles actions réalisez-vous pour économiser de l'énergie ? ",
+        "reponses_proposées":["a) Éteindre toutes les lumières ", "b) Éteindre le chauffage ", "c) Débrancher la prise du micro-ondes ", "d) Éteindre la télévision ", "e) Toutes les réponses précédentes "],
+        "categories": ["?"],
+        "score": "1",
+        "explication": "",
+        "mot-cles": ["LivingRoom"],
+        "time":"light",
+        "reponse": [0, 2, 3]
+    
+    }
+
 
   ]
   
