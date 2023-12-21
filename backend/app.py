@@ -34,6 +34,7 @@ def index():
 @app.route("/home")
 def hello_world():
     session["username"] = "test"
+    session["nom"]
     session["score"] = 200
     return "<p>Hello, World!</p>"
 
