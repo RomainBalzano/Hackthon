@@ -6,7 +6,7 @@
       "reponses_proposées": ["a) Oui", "b) Non"],
       "categories": ["Appareils électriques"],
       "score": "7",
-      "explication": "",
+      "explication": "Il faut mieux utiliser le mode économique pour réduire la consommation d'énergie, ces derniers permette de reduire un peu votre consommation electrique à l'année",
       "mot-cles": ["Bedroom"],
       "time":"light",
       "reponse": [0]
@@ -18,7 +18,7 @@
       "reponses_proposées": ["a) Maintenant (selon l’heure d’arriver du joueur : exemple 19h)", "b) 23h"],
       "categories": ["Véhicule électrique"],
       "score": "20",
-      "explication": "",
+      "explication": "19h est une des pires heures pour charger votre voiture électrique, car c'est à ce moment que la demande en électricité est la plus forte. Il est donc préférable de charger votre voiture électrique à 23h.",
       "mot-cles": ["Garage"],
       "time":"light",
       "reponse": [1]
