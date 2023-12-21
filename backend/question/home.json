@@ -7,7 +7,8 @@
       "categories": ["Appareils électriques"],
       "score": "1",
       "explication": "",
-      "mot-cles": ["Chambre"],
+      "mot-cles": ["Bedroom"],
+      "time":"light",
       "reponse": [0]
     },
     {
@@ -19,6 +20,7 @@
       "score": "1",
       "explication": "",
       "mot-cles": ["Garage"],
+      "time":"light",
       "reponse": [1]
     },
     {
@@ -29,7 +31,8 @@
       "categories": ["Eclairage"],
       "score": "1",
       "explication": "",
-      "mot-cles": ["Chambre"],
+      "mot-cles": ["Bedroom"],
+      "time":"light",
       "reponse": [0,1]
     },
     {
@@ -40,7 +43,8 @@
         "categories": ["Eau chaude sanitaire","Lavage"],
         "score": "1",
         "explication": "",
-        "mot-cles": ["Cuisine"],
+        "mot-cles": ["Kitchen"],
+        "time":"light",
         "reponse": [1,2]
       },
       {
@@ -51,7 +55,8 @@
         "categories": ["Eau chaude sanitaire"],
         "score": "1",
         "explication": "",
-        "mot-cles": ["Douche"],
+        "mot-cles": ["Shower"],
+        "time":"light",
         "reponse": [1]
       },
       {
@@ -62,7 +67,8 @@
         "categories": [],
         "score": "1",
         "explication": "",
-        "mot-cles": ["Douche"],
+        "mot-cles": ["Shower"],
+        "time":"light",
         "reponse": [3]
       },
       {
@@ -73,7 +79,8 @@
         "categories": ["Cuisson"],
         "score": "1",
         "explication": "",
-        "mot-cles": ["Cuisine"],
+        "mot-cles": ["Kitchen"],
+        "time":"light",
         "reponse": [1]
       },
       {
@@ -84,7 +91,8 @@
         "categories": ["Cuisson"],
         "score": "1",
         "explication": "",
-        "mot-cles": ["Cuisine"],
+        "mot-cles": ["Kitchen"],
+        "time":"light",
         "reponse": [1]
       },
       {
@@ -95,7 +103,8 @@
         "categories": ["Froid"],
         "score": "1",
         "explication": "",
-        "mot-cles": ["Cuisine"],
+        "mot-cles": ["Kitchen"],
+        "time":"light",
         "reponse": [0]
       },
       {
@@ -106,7 +115,8 @@
         "categories": ["Froid"],
         "score": "1",
         "explication": "",
-        "mot-cles": ["Cuisine"],
+        "mot-cles": ["Kitchen"],
+        "time":"light",
         "reponse": [0]
       },
       {
@@ -117,7 +127,8 @@
         "categories": ["Froid"],
         "score": "1",
         "explication": "",
-        "mot-cles": ["Cuisine"],
+        "mot-cles": ["Kitchen"],
+        "time":"light",
         "reponse": [0]
       },
       {
@@ -129,6 +140,7 @@
         "score": "1",
         "explication": "",
         "mot-cles": ["?"],
+        "time":"light",
         "reponse": [0, 1, 2]
       },
       {
@@ -139,7 +151,8 @@
         "categories": ["Chauffage"],
         "score": "1",
         "explication": "",
-        "mot-cles": ["maison", "Salon"],
+        "mot-cles": ["LivingRoom"],
+        "time":"light",
         "reponse": [0]
       },
       {
@@ -150,8 +163,10 @@
         "categories": ["Ventilation et climatisation"],
         "score": "1",
         "explication": "",
-        "mot-cles": ["maison", "Salon"],
+        "mot-cles": ["LivingRoom"],
+        "time":"light",
         "reponse": [0, 1, 2,3]
       }
+
   ]
   
