@@ -1,7 +1,9 @@
 
 from email.mime.application import MIMEApplication
 from email.mime.text import MIMEText
+import os
 from smtpd import SMTPServer
+import time
 from flask import Flask, request, render_template, redirect, url_for,session,jsonify, send_file
 from flask_mail import Mail, Message
 import secrets
@@ -17,7 +19,7 @@ app = Flask(__name__)
 app.config['MAIL_SERVER']='smtp.gmail.com'
 app.config['MAIL_PORT'] = 465
 app.config['MAIL_USERNAME'] = 'hackthonedfgroupe15@gmail.com'
-app.config['MAIL_PASSWORD'] = 'Edfhackthon15'
+app.config['MAIL_PASSWORD'] = 'ridz syqg tioe uyga'
 app.config['MAIL_USE_TLS'] = False
 app.config['MAIL_USE_SSL'] = True
 PDF_FOLDER = 'pdf'
@@ -39,6 +41,9 @@ def hello_world():
 def test():
     msg = Message(subject='Hello from the other side!', sender='hackthonedfgroupe15@gmail.com', recipients=['shinatu1905@gmail.com'])
     msg.body = "Hey Paul, sending you this email from my Flask app, lmk if it works"
+    with app.open_resource("certificat.pdf") as pdf:
+        msg.attach("certificat.pdf", "application/pdf", pdf.read())
+    
     mail.send(msg)
     return "Message sent!"
     
@@ -127,6 +132,7 @@ def download_pdf():
     
     config=pdfkit.configuration(wkhtmltopdf='C:/Program Files/wkhtmltopdf/bin/wkhtmltopdf.exe') 
     html_content = f"<h1>Score: {score}</h1><h2>Username: {username}</h2>"
+    
     pdfkit.from_string(html_content, 'certificat.pdf',configuration=config)
     pdf_file_path = 'certificat.pdf'
     return send_file(pdf_file_path, as_attachment=True)
@@ -142,39 +148,21 @@ def send_pdf():
     username = session.get("username")
     score = session.get("score")
     
+    config=pdfkit.configuration(wkhtmltopdf='C:/Program Files/wkhtmltopdf/bin/wkhtmltopdf.exe') 
+    html_content = f"<h1>Score: {score}</h1><h2>Username: {username}</h2>"
+    
+    pdfkit.from_string(html_content, 'certificat.pdf', configuration=config)
+    
+    msg = Message(subject='Eco Certificat de HACKTHON groupe 15', sender='hackthonedfgroupe15@gmail.com', recipients=['shinatu1905@gmail.com'])
+    msg.body = f"Hey {username}, Voici votre eco-certificat !Pour rappel votre score était de {score}"
+    with app.open_resource("certificat.pdf") as pdf:
+        msg.attach("certificat.pdf", "application/pdf", pdf.read())
+    
+    mail.send(msg)
+    return "Message sent!"
+    
     
    
-    smtp_port = 587
-    smtp_username = 'hackthonedfgroupe15@gmail.com'
-    smtp_password = 'Edfhackthon15'
-
-
-    sender_email = 'hackthonedfgroupe15@gmail.com'
-    recipient_email = 'shinatu1905@gmail.com'
-
-    message = MIMEMultipart()
-    message['From'] = sender_email
-    message['To'] = recipient_email
-    message['Subject'] = 'Objet du mail'
-
-
-    body = 'Contenu du message'
-    message.attach(MIMEText(body, 'plain'))
-
-
-    file_path = 'certificat.pdf' 
-    with open(file_path, 'rb') as file:
-        attachment = MIMEApplication(file.read(), _subtype="pdf")
-        attachment.add_header('Content-Disposition', 'attachment', filename='certificat.pdf' )
-        message.attach(attachment)
-
-    with smtplib.SMTP(SMTPServer, smtp_port) as server:
-        server.starttls()
-        server.login(smtp_username, smtp_password)
-        server.send_message(message)
-
-    print('E-mail envoyé avec succès!')
-    
 
 
 
