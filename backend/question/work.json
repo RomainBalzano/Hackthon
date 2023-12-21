@@ -1,42 +1,87 @@
 [
     {
+      "id": "0",
+      "type": "unique",
+      "question": "En arrivant au bureau, souhaitez-vous maintenir la température à 30 degrés ou la baisser à 21 degrés pour économiser de l'énergie ?",
+      "reponses_proposées": ["a) 21 degrés", "b) 30 degrés"],
+      "categories": ["Chauffage"],
+      "score": "20",
+      "explication": "",
+      "mot-cles": ["Desk"],
+      "time":"light",
+      "reponse": [0]
+    },
+    {
       "id": "1",
       "type": "unique",
-      "question": "En arrivant au bureau, souhaitez-vous maintenir la température à 30 degrés ou la baisser à 23 degrés pour économiser de l'énergie ?",
-      "reponses_proposées": ["30 degrés", "23 degrés"],
-      "categories": [],
-      "score": "0",
+      "question": "Lorsque vous quittez votre bureau, mettez-vous l'ordinateur en veille pour économiser de l'énergie ?",
+      "reponses_proposées": ["a) Mettre en veille l’ordinateur", "b) Je ne prends pas en considération"],
+      "categories": ["Appareils électriques"],
+      "score": "15",
       "explication": "",
-      "reponse": ""
+      "mot-cles": ["Desk"],
+      "time":"light",
+      "reponse": [0]
     },
     {
       "id": "2",
       "type": "unique",
-      "question": "Lorsque vous quittez votre bureau, mettez-vous l'ordinateur en veille et éteindre les lumières pour économiser de l'énergie ?",
-      "reponses_proposées": ["Mettre en veille l’ordinateur", "Eteindre les lumières"],
-      "categories": [],
-      "score": "0",
+      "question": "Utilisez-vous des prises programmables pour éteindre automatiquement les appareils électroniques non essentiels en dehors des heures de travail ?",
+      "reponses_proposées": ["a) Oui", "b) Non"],
+      "categories": ["Appareils électriques"],
+      "score": "10",
       "explication": "",
-      "reponse": ""
+      "mot-cles": ["Desk"],
+      "time":"light",
+      "reponse": [0]
     },
     {
       "id": "3",
       "type": "unique",
-      "question": "Utilisez-vous des prises programmables pour éteindre automatiquement les appareils électroniques non essentiels en dehors des heures de travail ?",
-      "reponses_proposées": ["Oui", "Non"],
-      "categories": [],
-      "score": "0",
+      "question": "Pendant les périodes de non-utilisation, éteignez-vous les équipements tels que les imprimantes et scanners ?",
+      "reponses_proposées": ["a) Oui", "b) Non"],
+      "categories": ["Appareils électriques"],
+      "score": "10",
       "explication": "",
-      "reponse": ""
+      "mot-cles": ["Desk"],
+      "time":"light",
+      "reponse": [0]
     },
     {
       "id": "4",
       "type": "unique",
-      "question": "Pour réduire la consommation d'énergie, proposez-vous des idées éco-responsables à vos collègues au travail ?",
-      "reponses_proposées": ["Oui", "Non"],
-      "categories": [],
-      "score": "0",
+      "question": "Privilégiez-vous l'éclairage naturel au bureau en laissant entrer la lumière du jour ?",
+      "reponses_proposées": ["a) Oui, je préfère la lumière du jour", "b) Non, je préfère allumer la lumière aussi"],
+      "categories": ["Eclairage"],
+      "score": "15",
       "explication": "",
-      "reponse": ""
+      "mot-cles": ["Desk"],
+      "time":"light",
+      "reponse": [0]
+    },
+    {
+      "id": "5",
+      "type": "multiple",
+      "question": "Comment gérez-vous l'utilisation de l'eau pour éviter le gaspillage ?",
+      "reponses_proposées": ["a) Je ne laisse pas couler l'eau inutilement.", "b) J'évite de laisser couler l'eau pendant que je me brosse les dents ou que je me savonne.", "c) Je favorise des douches de 5 minutes pour économiser l'eau et l'énergie.", "d)Toutes les réponses précédentes."],
+      "categories": ["Eau chaude sanitaire"],
+      "score": "15",
+      "explication": "",
+      "mot-cles": ["Bathroom"],
+      "time":"light",
+      "reponse": [3]
+    },
+    {
+      "id": "6",
+      "type": "unique",
+      "question": "Pour réduire la consommation d'énergie, proposez-vous des idées éco-responsables à vos collègues au travail ?",
+      "reponses_proposées": ["a) Oui", "b) Non"],
+      "categories": [],
+      "score": "15",
+      "explication": "",
+      "mot-cles": ["Work"],
+      "time":"light",
+      "reponse": [0]
     }
   ]
+  

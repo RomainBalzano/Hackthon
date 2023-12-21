@@ -10,8 +10,8 @@
     "categories": [
       "Appareils électriques"
     ],
-    "score": "1",
-    "explication": "",
+    "score": "7",
+    "explication": "Il faut mieux utiliser le mode économique pour réduire la consommation d'énergie, ces derniers permette de reduire un peu votre consommation electrique à l'année",
     "mot-cles": [
       "Bedroom"
     ],
@@ -31,10 +31,10 @@
     "categories": [
       "Véhicule électrique"
     ],
-    "score": "1",
-    "explication": "",
+    "score": "20",
+    "explication": "19h est une des pires heures pour charger votre voiture électrique, car c'est à ce moment que la demande en électricité est la plus forte. Il est donc préférable de charger votre voiture électrique à 23h.",
     "mot-cles": [
-      "Garrage"
+      "Garage"
     ],
     "time": "light",
     "reponse": [
@@ -77,7 +77,7 @@
       "Eau chaude sanitaire",
       "Lavage"
     ],
-    "score": "1",
+    "score": "10",
     "explication": "",
     "mot-cles": [
       "Kitchen"
@@ -99,7 +99,7 @@
     "categories": [
       "Eau chaude sanitaire"
     ],
-    "score": "1",
+    "score": "7",
     "explication": "",
     "mot-cles": [
       "Shower"
@@ -141,7 +141,7 @@
     "categories": [
       "Cuisson"
     ],
-    "score": "1",
+    "score": "7",
     "explication": "",
     "mot-cles": [
       "Kitchen"
@@ -162,7 +162,7 @@
     "categories": [
       "Cuisson"
     ],
-    "score": "1",
+    "score": "10",
     "explication": "",
     "mot-cles": [
       "Kitchen"
@@ -183,7 +183,7 @@
     "categories": [
       "Froid"
     ],
-    "score": "1",
+    "score": "3",
     "explication": "",
     "mot-cles": [
       "Kitchen"
@@ -204,7 +204,7 @@
     "categories": [
       "Froid"
     ],
-    "score": "1",
+    "score": "3",
     "explication": "",
     "mot-cles": [
       "Kitchen"
@@ -225,7 +225,7 @@
     "categories": [
       "Froid"
     ],
-    "score": "1",
+    "score": "4",
     "explication": "",
     "mot-cles": [
       "Kitchen"
@@ -248,7 +248,7 @@
     "categories": [
       "Lavage"
     ],
-    "score": "1",
+    "score": "7",
     "explication": "",
     "mot-cles": [
       "?"
@@ -271,7 +271,7 @@
     "categories": [
       "Chauffage"
     ],
-    "score": "1",
+    "score": "5",
     "explication": "",
     "mot-cles": [
       "LivingRoom"
@@ -294,7 +294,7 @@
     "categories": [
       "Ventilation et climatisation"
     ],
-    "score": "1",
+    "score": "5",
     "explication": "",
     "mot-cles": [
       "LivingRoom"
@@ -321,7 +321,7 @@
     "categories": [
       "?"
     ],
-    "score": "1",
+    "score": "10",
     "explication": "",
     "mot-cles": [
       "LivingRoom"
