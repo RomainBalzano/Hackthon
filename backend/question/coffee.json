@@ -4,14 +4,14 @@
 		"type": "unique",
 		"question": "Préférez-vous déguster votre café à une température de 70°C ou à une température de 55°C pour apprécier pleinement ses saveurs ?",
 		"reponses_proposées": [
-			"a) 55°C",
-			"b) 70°C"
+			"55°C",
+			"70°C"
 		],
 		"categories": [
 			"Température du café"
 		],
 		"score": "20",
-		"explication": "",
+		"explication": "Déguster le café à une température de 55°C permet d'apprécier pleinement ses saveurs sans risquer de brûler les arômes délicats.",
 		"mot-cles": [
 			"Boisson"
 		],
@@ -25,14 +25,14 @@
 		"type": "unique",
 		"question": "Lorsque vous terminez de boire votre café, éteignez-vous la machine à café pour économiser de l'énergie ?",
 		"reponses_proposées": [
-			"a) J'éteins la machine à café",
-			"b) Je ne prends pas en considération"
+			"J'éteins la machine à café",
+			"Je ne prends pas en considération"
 		],
 		"categories": [
 			"Appareils électriques"
 		],
 		"score": "15",
-		"explication": "",
+		"explication": "Éteindre la machine à café après utilisation contribue à économiser de l'énergie en évitant une consommation inutile.",
 		"mot-cles": [
 			"Boisson"
 		],
@@ -46,14 +46,14 @@
 		"type": "unique",
 		"question": "Utilisez-vous des filtres réutilisables plutôt que des filtres jetables pour préparer votre café ?",
 		"reponses_proposées": [
-			"a) Oui, j'utilise des filtres réutilisables",
-			"b) Non, j'utilise des filtres jetables"
+			"Oui, j'utilise des filtres réutilisables",
+			"Non, j'utilise des filtres jetables"
 		],
 		"categories": [
 			"Accessoires de café"
 		],
 		"score": "10",
-		"explication": "",
+		"explication": "L'utilisation de filtres réutilisables contribue à réduire les déchets liés à la préparation du café, faisant ainsi un choix éco-responsable.",
 		"mot-cles": [
 			"Boisson"
 		],
@@ -67,14 +67,14 @@
 		"type": "unique",
 		"question": "Pendant les périodes de non-utilisation, éteignez-vous la machine à expresso ou la cafetière pour économiser de l'énergie ?",
 		"reponses_proposées": [
-			"a) Oui, j'éteins la machine à café",
-			"b) Non, je la laisse allumée"
+			"Oui, j'éteins la machine à café",
+			"Non, je la laisse allumée"
 		],
 		"categories": [
 			"Appareils électriques"
 		],
 		"score": "10",
-		"explication": "",
+		"explication": "Éteindre la machine à café pendant les périodes de non-utilisation contribue à une consommation énergétique plus responsable.",
 		"mot-cles": [
 			"Boisson"
 		],
@@ -88,14 +88,14 @@
 		"type": "unique",
 		"question": "Privilégiez-vous les grains de café fraîchement moulus pour préparer votre café ?",
 		"reponses_proposées": [
-			"a) Oui, j'utilise des grains fraîchement moulus",
-			"b) Non, j'utilise du café moulu"
+			"Oui, j'utilise des grains fraîchement moulus",
+			"Non, j'utilise du café moulu"
 		],
 		"categories": [
 			"Préparation du café"
 		],
 		"score": "15",
-		"explication": "",
+		"explication": "Privilégier les grains fraîchement moulus permet de préserver les arômes du café, offrant ainsi une expérience plus riche en saveurs.",
 		"mot-cles": [
 			"Boisson"
 		],
@@ -109,16 +109,16 @@
 		"type": "multiple",
 		"question": "Comment gérez-vous la quantité d'eau pour préparer votre café afin de minimiser le gaspillage ?",
 		"reponses_proposées": [
-			"a) Je mesure la quantité exacte d'eau nécessaire pour chaque tasse.",
-			"b) J'évite de remplir le réservoir d'eau au-delà de la quantité requise pour ma consommation immédiate.",
-			"c) Je réutilise l'eau restante dans le réservoir pour une prochaine préparation de café.",
-			"d) Toutes les réponses précédentes."
+			"Je mesure la quantité exacte d'eau nécessaire pour chaque tasse.",
+			"J'évite de remplir le réservoir d'eau au-delà de la quantité requise pour ma consommation immédiate.",
+			"Je réutilise l'eau restante dans le réservoir pour une prochaine préparation de café.",
+			"Toutes les réponses précédentes."
 		],
 		"categories": [
 			"Gestion de l'eau"
 		],
 		"score": "15",
-		"explication": "",
+		"explication": "Gérer la quantité d'eau de manière précise et réutiliser l'eau contribuent à minimiser le gaspillage, adoptant ainsi une approche éco-responsable dans la préparation du café.",
 		"mot-cles": [
 			"Boisson"
 		],
@@ -132,12 +132,12 @@
 		"type": "unique",
 		"question": "Partagez-vous des recettes de café éco-responsables avec vos collègues ou amis amateurs de café ?",
 		"reponses_proposées": [
-			"a) Oui, je partage mes recettes de café éco-responsables",
-			"b) Non, je ne le fais pas"
+			"Oui, je partage mes recettes de café éco-responsables",
+			"Non, je ne le fais pas"
 		],
 		"categories": [],
 		"score": "15",
-		"explication": "",
+		"explication": "Partager des recettes de café éco-responsables contribue à sensibiliser les autres amateurs de café et encourage des pratiques plus durables.",
 		"mot-cles": [
 			"Boisson"
 		],
