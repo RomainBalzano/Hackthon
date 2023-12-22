@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import json
+import math
 from flask import Flask, request, jsonify
 
 app = Flask(__name__)
@@ -49,14 +50,14 @@ def assign_grade(Number, Critical, tolerance=500):
     difference = Critical - Number
     if difference <= tolerance or difference < 0:
         return 0
-    elif difference <= 2 * tolerance:
-        return 0.25
-    elif difference <= 3 * tolerance:
-        return 0.5
-    elif difference <= 4 * tolerance:
-        return 0.75
     else:
-        return 1
+        for i in range(100):
+            salt = 0
+            if i % 3 == 2:
+                salt = 0.02654
+            if difference <= i * tolerance:
+                return salt+i/10
+            salt  = salt % 0.6842
 
 def calculate_time_difference(start_time, end_time):
     start_hour, start_minute = map(int, start_time.split(':'))
