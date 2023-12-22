@@ -2,7 +2,7 @@
 from email.mime.application import MIMEApplication
 from email.mime.text import MIMEText
 from smtpd import SMTPServer
-from flask import Flask, request, render_template, redirect, url_for,session, send_file
+from flask import Flask, request, render_template, redirect, url_for,session, send_file, Response
 from flask_mail import Mail, Message
 import secrets
 import json
@@ -39,7 +39,13 @@ def define_user():
     session["username"] = request.args.get('name')
     session["firstname"] = request.args.get('firstname')
     session["score"] = 0
-    return redirect("/home")
+    return Response(
+        status=200,
+		response={
+			"success"
+		}
+    )
+# redirect("/home")
 
 @app.route("/test")
 def test():
@@ -116,14 +122,18 @@ def game_score(score):
     session[score]=session[score]+score
 
 @app.route("/game/route")
-def game_route():
-    with open('./question/home.json') as file:
+def game_coffee():
+    with open('./question/routes.json') as file:
             data = json.load(file)
     return data
-
+@app.route("/game/coffee")
+def game_route():
+    with open('./question/coffee.json') as file:
+            data = json.load(file)
+    return data
 @app.route("/game/work")
 def game_work():
-    with open('./question/home.json') as file:
+    with open('./question/work.json') as file:
             data = json.load(file)
     return data
 @app.route("/leaderboard/get")
