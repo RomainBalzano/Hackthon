@@ -11,6 +11,9 @@ from flask_cors import CORS
 
 
 
+ 
+
+
 app = Flask(__name__)
 CORS(app)
 app.config['MAIL_SERVER']='smtp.gmail.com'
@@ -36,8 +39,8 @@ def hello_world():
 def define_user():
     #à utiliser sous forme de 
     # http://127.0.0.1:5000/define_user?name=testnom&firstname=prenom
-    session["username"] = request.args.get('name')
-    session["firstname"] = request.args.get('firstname')
+    session["username"]     = request.args.get('name')
+    session["firstname"]    = request.args.get('firstname')
     session["score"] = 0
     return Response(
         status=200,
@@ -147,6 +150,17 @@ def leaderboard():
     return render_template("leaderboard.html")
 
 
+
+
+
+@app.route("/certification")
+def deonload_pdf():
+    name = session["username"] 
+   
+    pdf = pdfkit.from_string(html, False)
+    return response
+
+
     
 @app.route("/certification")
 def download_pdf():
@@ -160,11 +174,95 @@ def download_pdf():
     score = session.get("score")
     
     config=pdfkit.configuration(wkhtmltopdf='C:/Program Files/wkhtmltopdf/bin/wkhtmltopdf.exe') 
-    html_content = f"<h1>Score: {score}</h1><h2>Username: {username}</h2>"
-    
-    pdfkit.from_string(html_content, 'certificat.pdf',configuration=config)
-    pdf_file_path = 'certificat.pdf'
-    return send_file(pdf_file_path, as_attachment=True)
+    html_content = f"""
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>Certificat de Réussite</title>
+            <style>
+                body {{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100vh;
+                    margin: 0;
+                    padding: 0;
+                }}
+
+                .container {{
+                    text-align: center;
+                    width: 80%;
+                    margin: 0 auto;
+                    border: 2px solid black; /* Ajout de la bordure */
+                    border-radius: 10px; /* Ajout des coins arrondis */
+                    padding: 20px; /* Ajout de l'espace intérieur */
+                    position: relative; /* Ajout de la position relative */
+                    height: 80vh; /* Augmentation de la hauteur */
+                }}
+
+                .badge {{
+                    position: absolute;
+                    top: 20px;
+                    left: 20px;
+                }}
+
+                .logo {{
+                    position: absolute;
+                    top: 20px;
+                    right: 20px;
+                }}
+
+                .text {{
+                    margin-top: 20px;
+                    position: absolute;
+                    bottom: 20px;
+                    right: 20px;
+                }}
+
+                .date {{
+                    position: relative;
+                    right: 20px;
+                    margin-left: 700px;
+                }}
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <img src="Badge_Certificat.jpg" alt="Badge de Réussite" class="badge">
+                <img src="Logo_Edf.png" alt="Badge de Réussite" class="Logo" style="position: absolute; top: 20px; right: 20px;">
+                <div class="text">
+                    
+                    <h1>Certificat de Réussite des écoGestes d'électricité</h1>
+                    
+                    <p>Ceci certifie que</p>
+                    <h2>{session["username"]}{session["firstname"]}</h2>
+                    <p>a participé avec succès au programme des éco-gestes énergétiques en collaboration avec EDF.</p>
+                    <p>Pour son engagement exceptionnel en faveur de la préservation de l'environnement et de l'adoption de comportements éco-responsables, nous décernons ce certificat de réussite.</p>
+                    <p>Score {score}</p>
+                    <p class="date" id="date"></p>
+                    <p><!-- Ajout de l'espace --></p>
+                    <p style="margin-bottom: 20px;"></p>
+                </div>
+            </div>
+
+            <script>
+                // Script pour afficher la date du jour
+                var today = new Date();
+                var dateElement = document.getElementById('date');
+                dateElement.textContent = 'Date: ' + today.toLocaleDateString();
+            </script>
+        </body>
+        </html>
+    """
+    html = render_template(
+        "pdf.html",
+        name=username)   
+    pdf = pdfkit.from_string(html, False)
+    response = send_file(pdf, as_attachment=True)
+    response.headers["Content-Type"] = "application/pdf"
+    response.headers["Content-Disposition"] = "inline; filename=certificat.pdf"
+    return response
+
 
 @app.route("/certification/send")
 def send_pdf():
