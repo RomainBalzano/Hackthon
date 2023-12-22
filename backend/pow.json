@@ -1,0 +1,30 @@
+{
+    "Microwave":{
+        "id":0,
+        "power": 1000
+    },
+    "Fans":{
+        "id":1,
+        "power": 75
+    },
+    "Lampe":{
+        "id":2,
+        "power": 100
+    },
+    "TV":{
+        "id": 3,
+        "power": 200
+    },
+    "PlayStation":{
+        "id": 4,
+        "power": 120
+    },
+    "Oven":{
+        "id":5,
+        "power": 3000
+    },
+    "Car": {
+        "id": 6,
+        "power": 4000
+    }
+}
