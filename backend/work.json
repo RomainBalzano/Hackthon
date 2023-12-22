@@ -1,0 +1,87 @@
+[
+    {
+      "id": "0",
+      "type": "unique",
+      "question": "En arrivant au bureau, souhaitez-vous maintenir la température à 30 degrés ou la baisser à 21 degrés pour économiser de l'énergie ?",
+      "reponses_proposées": [" 21 degrés", "30 degrés"],
+      "categories": ["Chauffage"],
+      "score": "20",
+      "explication": "Choisir de maintenir la température à 30 degrés peut contribuer à un confort thermique, mais cela pourrait augmenter la consommation d'énergie. Baisser à 21 degrés pourrait économiser de l'énergie en ajustant la température selon les besoins.",
+      "mot-cles": ["Desk"],
+      "time":"light",
+      "reponse": [0]
+    },
+    {
+      "id": "1",
+      "type": "unique",
+      "question": "Lorsque vous quittez votre bureau, mettez-vous l'ordinateur en veille pour économiser de l'énergie ?",
+      "reponses_proposées": ["Je ne prends pas en considération"," Mettre en veille l’ordinateur"],
+      "categories": ["Appareils électriques"],
+      "score": "15",
+      "explication": "Mettre l'ordinateur en veille lorsqu'il n'est pas utilisé peut contribuer à économiser de l'énergie en réduisant la consommation électrique. Cela peut être une pratique éco-responsable.",
+      "mot-cles": ["Desk"],
+      "time":"light",
+      "reponse": [1]
+    },
+    {
+      "id": "2",
+      "type": "unique",
+      "question": "Utilisez-vous des prises programmables pour éteindre automatiquement les appareils électroniques non essentiels en dehors des heures de travail ?",
+      "reponses_proposées": ["Oui","Non"],
+      "categories": ["Appareils électriques"],
+      "score": "10",
+      "explication": "L'utilisation de prises programmables pour éteindre automatiquement les appareils électroniques non essentiels en dehors des heures de travail peut contribuer à réduire la consommation d'énergie lorsque les appareils ne sont pas nécessaires.",
+      "mot-cles": ["Desk"],
+      "time":"light",
+      "reponse": [0]
+    },
+    {
+      "id": "3",
+      "type": "unique",
+      "question": "Pendant les périodes de non-utilisation, éteignez-vous les équipements tels que les imprimantes et scanners ?",
+      "reponses_proposées": [" Non", " Oui "],
+      "categories": ["Appareils électriques"],
+      "score": "10",
+      "explication": "Éteindre les équipements tels que les imprimantes et scanners pendant les périodes de non-utilisation peut contribuer à économiser de l'énergie en évitant une consommation électrique inutile.",
+      "mot-cles": ["Desk"],
+      "time":"light",
+      "reponse": [1]
+    },
+    {
+      "id": "4",
+      "type": "unique",
+      "question": "Privilégiez-vous l'éclairage naturel au bureau en laissant entrer la lumière du jour ?",
+      "reponses_proposées": ["Oui, je préfère la lumière du jour", "Non, je préfère allumer la lumière aussi"],
+      "categories": ["Eclairage"],
+      "score": "15",
+      "explication": " Privilégier l'éclairage naturel en laissant entrer la lumière du jour peut non seulement économiser de l'énergie, mais également créer un environnement de travail agréable et bénéfique pour le bien-être. Cela contribue à réduire la dépendance à l'éclairage artificiel, ce qui est bénéfique tant sur le plan énergétique que sur le plan du confort.",
+      "mot-cles": ["Desk"],
+      "time":"light",
+      "reponse": [0]
+    },
+    {
+      "id": "5",
+      "type": "multiple",
+      "question": "Comment gérez-vous l'utilisation de l'eau pour éviter le gaspillage ?",
+      "reponses_proposées": ["Je ne laisse pas couler l'eau inutilement.", "J'évite de laisser couler l'eau pendant que je me brosse les dents ou que je me savonne.", "Je favorise des douches de 5 minutes pour économiser l'eau et l'énergie.", "Toutes les réponses précédentes."],
+      "categories": ["Eau chaude sanitaire"],
+      "score": "15",
+      "explication": "Adopter des pratiques telles que ne pas laisser couler l'eau inutilement, éteindre l'eau pendant le brossage des dents et favoriser des douches de courte durée contribue à éviter le gaspillage d'eau et à économiser de l'énergie associée au chauffage de l'eau.",
+      "mot-cles": ["Bathroom"],
+      "time":"light",
+      "reponse": [3]
+    },
+    {
+      "id": "6",
+      "type": "unique",
+      "question": "Pour réduire la consommation d'énergie, proposez-vous des idées éco-responsables à vos collègues au travail ?",
+      "reponses_proposées": ["Oui", "Non"],
+      "categories": [],
+      "score": "15",
+      "explication": "Proposer des idées éco-responsables à vos collègues au travail démontre un engagement envers la réduction de la consommation d'énergie. Cela peut encourager une culture de responsabilité environnementale au sein de l'entreprise.",
+      "mot-cles": ["Work"],
+      "time":"light",
+      "reponse": [0]
+    }
+  ]
+  

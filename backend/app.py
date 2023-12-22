@@ -2,7 +2,7 @@
 from email.mime.application import MIMEApplication
 from email.mime.text import MIMEText
 from smtpd import SMTPServer
-from flask import Flask, request, render_template, redirect, url_for,session, send_file, Response
+from flask import Flask, request, render_template, redirect, url_for,session, send_file, Response, make_response
 from flask_mail import Mail, Message
 import secrets
 import json
@@ -153,17 +153,11 @@ def leaderboard():
 
 
 
-@app.route("/certification")
-def deonload_pdf():
-    name = session["username"] 
-   
-    pdf = pdfkit.from_string(html, False)
-    return response
 
 
     
 @app.route("/certification")
-def download_pdf():
+def generate_pdf():
     if not session.get("name") and not session.get("score"):
         return redirect("/home")
     
@@ -173,96 +167,59 @@ def download_pdf():
     username = session.get("username")
     score = session.get("score")
     
-    config=pdfkit.configuration(wkhtmltopdf='C:/Program Files/wkhtmltopdf/bin/wkhtmltopdf.exe') 
+    config=pdfkit.configuration(wkhtmltopdf='C:/Program Files/wkhtmltopdf/bin/wkhtmltopdf.exe')
     html_content = f"""
-        <!DOCTYPE html>
-        <html>
-        <head>
-            <title>Certificat de Réussite</title>
-            <style>
-                body {{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    height: 100vh;
-                    margin: 0;
-                    padding: 0;
-                }}
+            <!DOCTYPE html>
+<html lang="fr">
 
-                .container {{
-                    text-align: center;
-                    width: 80%;
-                    margin: 0 auto;
-                    border: 2px solid black; /* Ajout de la bordure */
-                    border-radius: 10px; /* Ajout des coins arrondis */
-                    padding: 20px; /* Ajout de l'espace intérieur */
-                    position: relative; /* Ajout de la position relative */
-                    height: 80vh; /* Augmentation de la hauteur */
-                }}
+<head>
+    <meta charset="UTF-8">
+    <title>Certificat de Réussite</title>
+</head>
 
-                .badge {{
-                    position: absolute;
-                    top: 20px;
-                    left: 20px;
-                }}
+<body style=" margin: 0; padding: 0; font-family: Arial, sans-serif;">
 
-                .logo {{
-                    position: absolute;
-                    top: 20px;
-                    right: 20px;
-                }}
+    <div style="text-align: center; height:95vh; width: 95%; border: 2px solid black; border-radius: 10px; padding: 20px; magin-left :5%; position: relative; display: flex;">
+        <img src="https://cdn.discordapp.com/attachments/1178019806105055334/1187696506782883860/Badge_Certificat.jpg?ex=6597d391&is=65855e91&hm=54f6c1d70a800bac55111730ae7fe84e2df67dd9d4cc4a8a868642465d2ec6a0&" alt="Badge de Réussite" style= "margin-top: 20px; width:100px; height:100px; position:absolue; top:0px;">
+        <img src="https://cdn.discordapp.com/attachments/1178019806105055334/1187696506422165505/Logo_Edf.png?ex=6597d391&is=65855e91&hm=02d6f640d65e39ad61f0bb3d7b4bd60a1bff9250bef900860a95e287c49964c0&" alt="Logo EDF" style="margin-top: 20px; float-left">
 
-                .text {{
-                    margin-top: 20px;
-                    position: absolute;
-                    bottom: 20px;
-                    right: 20px;
-                }}
+        <div style="margin-top: 20px;">
 
-                .date {{
-                    position: relative;
-                    right: 20px;
-                    margin-left: 700px;
-                }}
-            </style>
-        </head>
-        <body>
-            <div class="container">
-                <img src="Badge_Certificat.jpg" alt="Badge de Réussite" class="badge">
-                <img src="Logo_Edf.png" alt="Badge de Réussite" class="Logo" style="position: absolute; top: 20px; right: 20px;">
-                <div class="text">
-                    
-                    <h1>Certificat de Réussite des écoGestes d'électricité</h1>
-                    
-                    <p>Ceci certifie que</p>
-                    <h2>{session["username"]}{session["firstname"]}</h2>
-                    <p>a participé avec succès au programme des éco-gestes énergétiques en collaboration avec EDF.</p>
-                    <p>Pour son engagement exceptionnel en faveur de la préservation de l'environnement et de l'adoption de comportements éco-responsables, nous décernons ce certificat de réussite.</p>
-                    <p>Score {score}</p>
-                    <p class="date" id="date"></p>
-                    <p><!-- Ajout de l'espace --></p>
-                    <p style="margin-bottom: 20px;"></p>
-                </div>
-            </div>
+            <h1>Certificat de Réussite des écoGestes d'électricité</h1>
+            <p>Ceci certifie que</p>
+            <h2>{session["username"]} {session["firstname"]}</h2>
+            <p>a participé avec succès au programme des éco-gestes énergétiques en collaboration avec EDF.</p>
+            <p>Pour son engagement exceptionnel en faveur de la préservation de l'environnement et de l'adoption de comportements éco-responsables, nous décernons ce certificat de réussite.</p>
+            <p id="date"></p>
+            <p style="margin-bottom: 20px;"></p>
 
-            <script>
-                // Script pour afficher la date du jour
-                var today = new Date();
-                var dateElement = document.getElementById('date');
-                dateElement.textContent = 'Date: ' + today.toLocaleDateString();
-            </script>
-        </body>
-        </html>
+        </div>
+    </div>
+
+    <script>
+        // Script pour afficher la date du jour
+        var today = new Date();
+        var dateElement = document.getElementById('date');
+        dateElement.textContent = 'Date: ' + today.toLocaleDateString();
+    </script>
+</body>
+
+</html>
+
+
+
+
     """
-    html = render_template(
-        "pdf.html",
-        name=username)   
-    pdf = pdfkit.from_string(html, False)
-    response = send_file(pdf, as_attachment=True)
+    pdfkitOpt = {
+            'page-size': 'A5',
+            'orientation': 'landscape'
+        }
+    pdf = pdfkit.from_string(html_content,options=pdfkitOpt,configuration=config)
+    response = make_response(pdf)
     response.headers["Content-Type"] = "application/pdf"
     response.headers["Content-Disposition"] = "inline; filename=certificat.pdf"
     return response
-
+    
 
 @app.route("/certification/send")
 def send_pdf():
@@ -276,7 +233,53 @@ def send_pdf():
     username = session.get("username")
     score = session.get("score")
     config=pdfkit.configuration(wkhtmltopdf='C:/Program Files/wkhtmltopdf/bin/wkhtmltopdf.exe') 
-    html_content = f"<h1>Score: {score}</h1><h2>Username: {username}</h2>"
+    html_content = f"""
+            <!DOCTYPE html>
+    <html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Certificat de Réussite</title>
+    </head>
+
+    <body style=" margin: 0; padding: 0; font-family: Arial, sans-serif;">
+
+        <div style="text-align: center; height:95vh; width: 95%; border: 2px solid black; border-radius: 10px; padding: 20px; magin-left :5%; position: relative; display: flex;">
+            <img src="https://cdn.discordapp.com/attachments/1178019806105055334/1187696506782883860/Badge_Certificat.jpg?ex=6597d391&is=65855e91&hm=54f6c1d70a800bac55111730ae7fe84e2df67dd9d4cc4a8a868642465d2ec6a0&" alt="Badge de Réussite" style= "margin-top: 20px; width:100px; height:100px; position:absolue; top:0px;">
+            <img src="https://cdn.discordapp.com/attachments/1178019806105055334/1187696506422165505/Logo_Edf.png?ex=6597d391&is=65855e91&hm=02d6f640d65e39ad61f0bb3d7b4bd60a1bff9250bef900860a95e287c49964c0&" alt="Logo EDF" style="margin-top: 20px; float-left">
+
+            <div style="margin-top: 20px;">
+
+                <h1>Certificat de Réussite des écoGestes d'électricité</h1>
+                <p>Ceci certifie que</p>
+                <h2>{session["username"]} {session["firstname"]}</h2>
+                <p>a participé avec succès au programme des éco-gestes énergétiques en collaboration avec EDF.</p>
+                <p>Pour son engagement exceptionnel en faveur de la préservation de l'environnement et de l'adoption de comportements éco-responsables, nous décernons ce certificat de réussite.</p>
+                <p id="date"></p>
+                <p style="margin-bottom: 20px;"></p>
+
+            </div>
+        </div>
+
+        <script>
+            // Script pour afficher la date du jour
+            var today = new Date();
+            var dateElement = document.getElementById('date');
+            dateElement.textContent = 'Date: ' + today.toLocaleDateString();
+        </script>
+    </body>
+
+    </html>
+
+
+
+
+    """
+    pdfkitOpt = {
+            'page-size': 'A5',
+            'orientation': 'landscape'
+        }
+    pdf = pdfkit.from_string(html_content,options=pdfkitOpt,configuration=config)
     pdfkit.from_string(html_content, 'certificat.pdf',configuration=config)
     msg = Message(subject='Eco Certificat de HACKTHON groupe 15', sender='hackthonedfgroupe15@gmail.com', recipients=['shinatu1905@gmail.com'])
     msg.body = f"Hey {username}, Voici votre eco-certificat !Pour rappel votre score etait de {score}"

@@ -1,0 +1,113 @@
+[
+  {
+    "id": "0",
+    "type": "unique",
+    "question": "Comment adaptez-vous votre vitesse de conduite pour optimiser l'efficacité énergétique de votre voiture électrique ?",
+    "reponses_proposées": [
+      "J'adopte une conduite lente et régulière.",
+      "Je n'adapte pas ma vitesse de manière particulière.",
+      "J'ajuste ma vitesse en fonction des limitations de la route."
+      
+    ],
+    "categories": [
+      "Véhicule électrique"
+    ],
+    "score": "40",
+    "energy": "30",
+    "explication": "Adopter une conduite lente et régulière contribue à optimiser l'efficacité énergétique de votre voiture électrique, permettant ainsi une meilleure autonomie. C'est une pratique recommandée pour maximiser l'efficacité du trajet",
+    "mot-cles": [
+      "TrajetVoiture"
+    ],
+    "reponse": [
+      0,2
+    ]
+  },
+  {
+    "id": "1",
+    "type": "unique",
+    "question": "Lorsque vous quittez votre domicile, souhaitez-vous rouler à une vitesse de :",
+    "reponses_proposées": [
+      "80 km/h",
+      "50 km/h"
+    ],
+    "categories": [
+      "Véhicule électrique"
+    ],
+    "score": "20",
+    "energy": "20",
+    "explication": "Opter pour une vitesse de 50 km/h lors du départ de votre domicile peut contribuer à une conduite plus éco-énergétique, réduisant ainsi la consommation d'énergie de votre voiture électrique.",
+    "mot-cles": [
+      "TrajetVoiture"
+    ],
+    "reponse": [
+      1
+    ]
+  },
+  {
+    "id": "2",
+    "type": "unique",
+    "question": "Activez-vous le mode éco de votre voiture électrique pour optimiser la consommation d'énergie ?",
+    "reponses_proposées": [
+      "Oui, à chaque trajet.",
+      "De temps en temps.",
+      "Non, jamais."
+    ],
+    "categories": [
+      "Véhicule électrique"
+    ],
+    "score": "20",
+    "energy": "10",
+    "explication": "Activer le mode éco de votre voiture électrique à chaque trajet permet d'optimiser la consommation d'énergie, favorisant une conduite plus efficiente et éco-responsable.",
+    "mot-cles": [
+      "TrajetVoiture"
+    ],
+    "reponse": [
+      0,1
+    ]
+  },
+  {
+    "id": "3",
+    "type": "unique",
+    "question": "Utilisez-vous fréquemment le freinage régénératif pour récupérer de l'énergie lors des décélérations ?",
+    "reponses_proposées": [
+      
+      
+      "Rarement, voire jamais.",
+      "Oui, systématiquement.",
+      "Occasionnellement."
+    ],
+    "categories": [
+      "Véhicule électrique"
+    ],
+    "score": "10",
+    "energy": "10",
+    "explication": "Utiliser le freinage régénératif de manière systématique permet de récupérer de l'énergie lors des décélérations, contribuant ainsi à une utilisation plus efficace de l'énergie de la voiture électrique.",
+    "mot-cles": [
+      "TrajetVoiture"
+    ],
+    "reponse": [
+      1,2
+    ]
+  },
+  {
+    "id": "4",
+    "type": "unique",
+    "question": "Comment gérez-vous votre chauffage et votre climatisation dans votre voiture électrique?",
+    "reponses_proposées": [
+      "Je les utilise à fond.",
+      "Je les utilise de manière modérée."
+    ],
+    "categories": [
+      "Véhicule électrique"
+    ],
+    "score": "10",
+    "energy": "10",
+    "explication": "La climatisation et le chauffage sont deux éléments importants qui contribuent à la consommation d'énergie des voitures électriques. En les utilisant de manière modérée, il est possible de réaliser des économies d'énergie significatives.",
+    "mot-cles": [
+      "GestionÉnergie"
+    ],
+    "reponse": [
+      1
+    ]
+  }
+]

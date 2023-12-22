@@ -4,8 +4,8 @@
     "type": "unique",
     "question": "Lors de l'utilisation d'appareils électroniques (ordinateur, télévision), choisissez-vous un mode économique pour réduire la consommation d'énergie ?",
     "reponses_proposées": [
-      "a) Oui",
-      "b) Non"
+      "Oui",
+      "Non"
     ],
     "categories": [
       "Appareils électriques"
@@ -25,8 +25,8 @@
     "type": "unique",
     "question": "À quelle heure préférez-vous charger votre voiture électrique ?",
     "reponses_proposées": [
-      "a) Maintenant (selon l’heure d’arriver du joueur : exemple 19h)",
-      "b) 23h"
+      "Maintenant (selon l’heure d’arriver du joueur : exemple 19h)",
+      "23h"
     ],
     "categories": [
       "Véhicule électrique"
@@ -46,15 +46,15 @@
     "type": "unique",
     "question": "Comment gérez-vous l'éclairage dans votre chambre pour économiser de l'énergie ?",
     "reponses_proposées": [
-      "a) J'éteins les lumières lorsque je quitte la chambre.",
-      "b) J'ouvre les rideaux pendant la journée pour profiter de la lumière naturelle.",
-      "c) Je ne fais pas particulièrement attention à ma consommation d'éclairage."
+      "J'éteins les lumières lorsque je quitte la chambre.",
+      "J'ouvre les rideaux pendant la journée pour profiter de la lumière naturelle.",
+      "Je ne fais pas particulièrement attention à ma consommation d'éclairage."
     ],
     "categories": [
       "Eclairage"
     ],
     "score": "1",
-    "explication": "",
+    "explication": "Il faut mieux utiliser la lumiere naturel quand elle est disponible, car non seulement cela permet de reduire sa consomation mais et aussi c'est meilleure pour la santé ! Et evidemment il faut mieux eteindre la lumiere ne profite a personne. ",
     "mot-cles": [
       "Bedroom"
     ],
@@ -69,16 +69,16 @@
     "type": "unique",
     "question": "Pour la vaisselle, préférez-vous lave-vaisselle ou lavage à la main pour économiser de l'énergie ?",
     "reponses_proposées": [
-      "a) Lave-vaisselle avec une température élevée",
-      "b) Lave-vaisselle avec une température moyenne",
-      "c) Lavage à la main"
+      "Lave-vaisselle avec une température élevée",
+      "Lave-vaisselle avec une température moyenne",
+      "Lavage à la main"
     ],
     "categories": [
       "Eau chaude sanitaire",
       "Lavage"
     ],
     "score": "10",
-    "explication": "",
+    "explication": "Il vaut mieux laver à la main quand il y a peu de vaisselle, car le lave vaisselle consomme beaucoup d'eau et d'energie. Mais si vous avez beaucoup de vaisselle, il vaut mieux utiliser le lave vaisselle, car il consomme moins d'eau et evidemment à temperature moyenne.",
     "mot-cles": [
       "Kitchen"
     ],
@@ -93,14 +93,14 @@
     "type": "unique",
     "question": "Avant de vous doucher, quelle température d'eau préférez-vous ?",
     "reponses_proposées": [
-      "a) J'apprécie une température élevée pour une douche réconfortante.",
-      "b) Je préfère une température d'eau moyenne pour économiser de l'énergie."
+      "J'apprécie une température élevée pour une douche réconfortante.",
+      "Je préfère une température d'eau moyenne pour économiser de l'énergie."
     ],
     "categories": [
       "Eau chaude sanitaire"
     ],
     "score": "7",
-    "explication": "",
+    "explication": "On prefera utiliser temperature moyenne pour economiser de l'energie, car l'eau chaude est une des choses qui consomme le plus d'energie dans une maison.",
     "mot-cles": [
       "Bathroom"
     ],
@@ -114,14 +114,14 @@
     "type": "multiple",
     "question": "Comment gérez-vous l'utilisation de l'eau pour éviter le gaspillage ?",
     "reponses_proposées": [
-      "a) Je ne laisse pas couler l'eau inutilement.",
-      "b) J'évite de laisser couler l'eau pendant que je me brosse les dents ou que je me savonne.",
-      "c) Je favorise des douches de 5 minutes pour économiser l'eau et l'énergie.",
-      "d)Toutes les réponses précédentes."
+      "Je ne laisse pas couler l'eau inutilement.",
+      "J'évite de laisser couler l'eau pendant que je me brosse les dents ou que je me savonne.",
+      "Je favorise des douches de 5 minutes pour économiser l'eau et l'énergie.",
+      "Toutes les réponses précédentes."
     ],
     "categories": [],
     "score": "1",
-    "explication": "",
+    "explication": "Ici toute les reponses sont vrai, en effet chaqu'une de ces actions permet de reduire sa consomation d'eau et d'energie.",
     "mot-cles": [
       "Bathroom"
     ],
@@ -135,14 +135,14 @@
     "type": "unique",
     "question": "En cuisinant, quel degré de puissance devrait avoir votre plaque de cuisson ?",
     "reponses_proposées": [
-      "a) Élevé",
-      "b) Moyen"
+      "Élevé",
+      "Moyen"
     ],
     "categories": [
       "Cuisson"
     ],
     "score": "7",
-    "explication": "",
+    "explication": "On prefera la cuisson à temperature moyenne, c'est à la fois meilleure pour les aliments mais aussi pour l'energie.",
     "mot-cles": [
       "Kitchen"
     ],
@@ -156,14 +156,14 @@
     "type": "unique",
     "question": "Pour économiser de l'énergie, préférez-vous utiliser le four ou le micro-ondes pour réchauffer les restes ?",
     "reponses_proposées": [
-      "a) Four",
-      "b) Micro-ondes"
+      "Four",
+      "Micro-ondes"
     ],
     "categories": [
       "Cuisson"
     ],
     "score": "10",
-    "explication": "",
+    "explication": "Il faut mieux utiliser le micro-onde pour rechauffer les restes, car il consomme beaucoup moins d'energie que le four.(2000 à 2500 watt-heure pour le four contre 1000 à 1500 pour le micro-onde)",
     "mot-cles": [
       "Kitchen"
     ],
@@ -177,14 +177,14 @@
     "type": "unique",
     "question": "Avant de placer vos aliments dans le réfrigérateur, attendez-vous qu'ils aient refroidi ?",
     "reponses_proposées": [
-      "a) Oui, j'attends que mes aliments aient refroidi avant de les placer dans le réfrigérateur pour économiser de l'énergie et assurer une meilleure conservation.",
-      "b) Non, je ne prends pas toujours le temps d'attendre, ce qui peut affecter la consommation d'énergie et la qualité de conservation des aliments."
+      "Oui",
+      "Non"
     ],
     "categories": [
       "Froid"
     ],
     "score": "3",
-    "explication": "",
+    "explication": "Il faut mieux laisser refroidir les aliments avant de les mettre au frigo, car cela permet de reduire la consomation d'energie et aussi de mieux conserver les aliments.",
     "mot-cles": [
       "Kitchen"
     ],
@@ -198,14 +198,14 @@
     "type": "unique",
     "question": "Êtes-vous diligent dans le dégivrage régulier de votre congélateur et réfrigérateur ?",
     "reponses_proposées": [
-      "a) Oui, en dégivrant souvent, je maintiens l'efficacité de mes appareils, économisant ainsi de l'énergie.",
-      "b) Non, en évitant le dégivrage, mes appareils peuvent consommer plus d'énergie et devenir moins performants."
+      "Oui",
+      "Non"
     ],
     "categories": [
       "Froid"
     ],
     "score": "3",
-    "explication": "",
+    "explication": "Il faut mieux degivrer regulierement son frigo, cela lui permet d'avoir une meilleure durée de vie et de consommer moins d'energie.",
     "mot-cles": [
       "Kitchen"
     ],
@@ -219,14 +219,14 @@
     "type": "unique",
     "question": "Placez-vous votre réfrigérateur ou votre congélateur à une distance suffisante des appareils de cuisson pour économiser de l'énergie ?",
     "reponses_proposées": [
-      "a) Oui, en les éloignant, j'empêche une surchauffe, réduisant ainsi leur consommation d'énergie",
-      "b) Non, en les plaçant trop près, la surchauffe peut augmenter leur consommation d'énergie et diminuer leur efficacité"
+      "Oui, en les éloignant, j'empêche une surchauffe, réduisant ainsi leur consommation d'énergie",
+      "Non, en les plaçant trop près, la surchauffe peut augmenter leur consommation d'énergie et diminuer leur efficacité"
     ],
     "categories": [
       "Froid"
     ],
     "score": "4",
-    "explication": "",
+    "explication": "Pour eviter une surchauffe de votre appareil, il est preferable d'eloigner le réfrigirateur des appareils de cuissons.",
     "mot-cles": [
       "Kitchen"
     ],
@@ -240,16 +240,16 @@
     "type": "multiple",
     "question": "Comment gérez-vous l'utilisation de votre lave-linge de manière économe en énergie?",
     "reponses_proposées": [
-      "a) J'utilise les programmes économiques de mon lave-linge",
-      "b) Je privilégie les basses températures qui sont souvent suffisamment efficaces.",
-      "c) Je privilégie le séchage à l’air libre plutôt que l'usage de mon sèche-linge.",
-      "d) Je préfère les programmes de lavage à haute température, même si cela peut être plus énergivore."
+      "J'utilise les programmes économiques de mon lave-linge",
+      "Je privilégie les basses températures qui sont souvent suffisamment efficaces.",
+      "Je privilégie le séchage à l’air libre plutôt que l'usage de mon sèche-linge.",
+      "Je préfère les programmes de lavage à haute température, même si cela peut être plus énergivore."
     ],
     "categories": [
       "Lavage"
     ],
     "score": "7",
-    "explication": "",
+    "explication": "Si le temps le permet il faut mieux utiliser le sechage à l'air libre.Sinon il faut priviligier les basses temperatures et les programmes economiques.",
     "mot-cles": [
       "?"
     ],
@@ -265,8 +265,8 @@
     "type": "unique",
     "question": "Pour économiser de l'énergie, ajustez-vous la température de votre chauffage ?",
     "reponses_proposées": [
-      "a) Oui, je suis attentif à ma consommation d'énergie. Je règle la température de mon chauffage entre 19 et 21 degrés pendant la journée et à 17 degrés la nuit pour optimiser l'efficacité énergétique.",
-      "b) Non, je ne fais pas attention à la température de mon chauffage, peut-être que je devrais envisager de régler la température pour économiser de l’énergie"
+      "Oui, je suis attentif à ma consommation d'énergie. Je règle la température de mon chauffage entre 19 et 21 degrés pendant la journée et à 17 degrés la nuit pour optimiser l'efficacité énergétique.",
+      "Non, je ne fais pas attention à la température de mon chauffage, peut-être que je devrais envisager de régler la température pour économiser de l’énergie"
     ],
     "categories": [
       "Chauffage"
@@ -286,16 +286,16 @@
     "type": "unique",
     "question": "Comment gérez-vous la ventilation avant d'utiliser la climatisation pour consommer moins d'énergie",
     "reponses_proposées": [
-      "a) Je maintiens ouvertes les portes de mes pièces intérieures dès que je le peux pour favoriser une ventilation naturelle.",
-      "b) Lorsque la ventilation naturelle n'est plus suffisante, j'utilise un ventilateur.",
-      "c) Lorsqu'il fait chaud, je baisse mes stores ou je ferme les volets pendant la journée.",
-      "d) Je pense à fermer mes fenêtres dès que la température extérieure dépasse celle de mon logement. Je n'accorde pas d'importance particulière à la ventilation et j'utilise la climatisation sans préoccupation."
+      "Je maintiens ouvertes les portes de mes pièces intérieures dès que je le peux pour favoriser une ventilation naturelle.",
+      "Lorsque la ventilation naturelle n'est plus suffisante, j'utilise un ventilateur.",
+      "Lorsqu'il fait chaud, je baisse mes stores ou je ferme les volets pendant la journée.",
+      "Je pense à fermer mes fenêtres dès que la température extérieure dépasse celle de mon logement. Je n'accorde pas d'importance particulière à la ventilation et j'utilise la climatisation sans préoccupation."
     ],
     "categories": [
       "Ventilation et climatisation"
     ],
     "score": "5",
-    "explication": "",
+    "explication": "Ici toute les reponses était bonnes ! En effet chaque réponse permet de reduire sa consomation d'energie.",
     "mot-cles": [
       "LivingRoom"
     ],
@@ -312,17 +312,17 @@
     "type": "multiple",
     "question": "Avant de quitter la maison, quelles actions réalisez-vous pour économiser de l'énergie ? ",
     "reponses_proposées": [
-      "a) Éteindre toutes les lumières ",
-      "b) Éteindre le chauffage ",
-      "c) Débrancher la prise du micro-ondes ",
-      "d) Éteindre la télévision ",
-      "e) Toutes les réponses précédentes "
+      "Éteindre toutes les lumières ",
+      "Éteindre le chauffage ",
+      "Débrancher la prise du micro-ondes ",
+      "Éteindre la télévision ",
+      "Toutes les réponses précédentes "
     ],
     "categories": [
       "?"
     ],
     "score": "10",
-    "explication": "",
+    "explication": "Ici tout etait bon sauf eteindre le chauffage et donc par conséquent toute les réponses precedentes.En effet il faut mieux garder son chauffage en basse temperature car il va consommer plus en se rallumant car il va devoir de nouveau rechauffer toute la piece.",
     "mot-cles": [
       "LivingRoom"
     ],
